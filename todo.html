@@ -9,14 +9,15 @@
       <h1>To Do List</h1>
       <div class="input-button">
         <input type="text" placeholder="Add Task" class="text">
-        <input type="date" class="datum" value="2014-02-09">
+        <input type="date" class="datum" value="">
         <button onclick=" dodajtask() ">Add</button>
       </div>
       <div class="display-grid">
         <input class="checker" type="radio"  id="operi sudje">
+        <label class="custom-radio" for="operi sudje"></label>
         <label class="zadatak"  for="operi sudje">operi sudje</label>
         <label class="vrijeme"  for="operi sudje">13/4/512</label>
-        <button >Delete</button>
+        <button onclick=" izbrisitask(this)" id="operi sudje">Delete</button>
       </div>
 
     </div>

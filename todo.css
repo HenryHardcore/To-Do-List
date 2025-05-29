@@ -85,6 +85,7 @@ body {
   border-radius: 40px;
   border: 1px solid grey;
   transition: 0.2s;
+  cursor: pointer;
 }
 .display-grid button:hover {
   background-color: rgb(199, 59, 59);
@@ -98,13 +99,43 @@ body {
   font-size: 30px;
   text-align: left;
   padding: 10px 0;
+  cursor: pointer;
 }
 .vrijeme {
   font-size: 30px;
   text-align: center;
   padding: 10px 0;
+  cursor: pointer;
 }
 .checker {
-  width: 30px;
-  margin-left: 20px;
+  
 }
+.custom-radio {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 13px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(19, 245, 11);  
+    position: relative;
+    cursor: pointer;
+    display: none;
+  }
+
+  .custom-radio::after {
+    content: '✔'; 
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0; 
+    transition: opacity 0.2s ease;
+    
+  }
+
+  .checker:checked + .custom-radio::after {
+    opacity: 1; 
+  }
